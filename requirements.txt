@@ -1,3 +1,9 @@
-opencv-python==4.10.0.84
-numpy==1.26.4
-matplotlib==3.9.2
+# No exact version numbers here on purpose: Google Colab already comes
+# with numpy and matplotlib pre-installed, and pinning exact versions
+# makes pip's dependency resolver very slow (sometimes minutes) as it
+# tries to reconcile them with everything else Colab has installed.
+# opencv-python-headless is the "no GUI extras" version of OpenCV,
+# which is all we need here and installs faster.
+opencv-python-headless
+numpy
+matplotlib
