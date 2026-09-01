@@ -1,0 +1,14 @@
+# The trained weights file is ~194 MB - too big for GitHub, and
+# everyone can download the exact same file themselves (see
+# download_weights.sh), so we don't commit it.
+model/*.weights
+
+# Python junk files
+__pycache__/
+*.pyc
+
+# Generated experiment output (images/CSV/chart) - these are RESULTS,
+# not source code, so I don't commit them. I copy the ones I actually
+# use into my essay by hand instead.
+results/*
+!results/.gitkeep
