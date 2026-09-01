@@ -4,14 +4,34 @@ You do not need to install Python, install Git, or use a terminal on
 your own computer. Everything below happens in your web browser using
 **Google Colab** (free, made by Google, runs Python for you).
 
-Follow these steps in order. Every "code cell" instruction means:
-click the `+ Code` button in Colab to add a new cell, paste in exactly
-what's shown, then press **Shift + Enter** to run it and move to the
-next cell.
+## Easiest way: use the single notebook file
+
+This project includes **`YOLOv2_Traffic_Experiment.ipynb`** — one file
+that already contains every step (installing libraries, setting up
+YOLOv2, uploading your photo, running the experiment, showing the
+results) as separate cells, fully commented. This avoids downloading a
+ZIP and juggling multiple `.py` files entirely.
+
+1. Download `YOLOv2_Traffic_Experiment.ipynb` from this repository (on
+   the branch `claude/yolo-traffic-detection-gm6ha2` — click the file,
+   then the **Download raw file** button), or use the copy Claude sent
+   you directly in the chat.
+2. Go to https://colab.research.google.com, sign in with a Google
+   account.
+3. Click **File → Upload notebook**, and choose the `.ipynb` file.
+4. Run each cell from top to bottom (click a cell, press
+   **Shift + Enter**). The notebook tells you in its own text cells
+   what each step does and when it needs you to do something (like
+   upload a photo).
+
+That's it — you can stop reading here. The rest of this guide below is
+an older, more manual walkthrough (downloading a ZIP with separate
+`.py` files) kept for reference; you don't need it if you're using the
+notebook.
 
 ---
 
-## Step 1 — Download this project as a ZIP file
+## (Older/manual method) Step 1 — Download this project as a ZIP file
 
 1. Go to: https://github.com/a01725566-del/EE
 2. Near the top-left, click the branch dropdown (it might say `main`)
